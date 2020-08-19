@@ -65,9 +65,7 @@
             <materialDesign:PackIcon Kind="Money" Margin="488,200,0,0" RenderTransformOrigin="3.156,3.953" Height="39" Width="46" Foreground="{Binding ElementName=txtPrecio, Path=Foreground}" />
             <TextBox x:Name="txtPrecio" PreviewTextInput="txtPrecio_PreviewTextInput" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="546,179,0,0"  materialDesign:HintAssist.Hint="Precio"  TextWrapping="Wrap" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" Width="214" Height="60" FontFamily="Comic Sans MS" FontSize="20"/>
 
-
         </Grid>
-
 
         <Grid Grid.Row="2" Background="DarkBlue"   />
 
