@@ -13,12 +13,12 @@
         TextElement.FontSize="14"
         FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
         mc:Ignorable="d"
-        Title="MenuAdmin" Height="800" Width="1200" WindowStyle="None"  AllowsTransparency="True" WindowStartupLocation="Manual">
+        Title="MenuAdmin" Height="800" Width="1200" WindowStyle="None"  AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <Grid Loaded="Grid_Loaded" HorizontalAlignment="Center" Width="1200">
         <Grid.RowDefinitions>
             <RowDefinition Height="75" />
             <RowDefinition Height="649"/>
-            <RowDefinition Height="76"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Border Grid.Row="0" Background="Transparent" MouseLeftButtonDown ="Border_MouseLeftButtonDown" >
@@ -58,10 +58,10 @@
 
             <materialDesign:PackIcon Kind="Marketplace" Margin="26,195,0,0" RenderTransformOrigin="3.156,3.953" Height="34" Width="33" Foreground="{Binding ElementName=txtProducto,Path=Foreground}" />
             <TextBox x:Name="txtProducto" HorizontalAlignment="Left" Margin="80,179,0,0" Foreground="DarkBlue" materialDesign:HintAssist.Hint="Producto" materialDesign:HintAssist.IsFloating="True" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="60" FontFamily="Comic Sans MS" FontSize="20"/>
-            
+
             <materialDesign:PackIcon Kind="CardAccountDetails" Margin="495,135,0,0" RenderTransformOrigin="3.156,3.953" Height="34" Width="33" Foreground="{Binding  ElementName=txtDesc,Path=Foreground}" />
-            <TextBox x:Name="txtDesc" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="546,111,0,0"  materialDesign:HintAssist.Hint="Descripcion" materialDesign:HintAssist.IsFloating="True" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="63" FontFamily="Comic Sans MS" FontSize="20"/>
-            
+            <TextBox x:Name="txtDesc" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="546,111,0,0"  materialDesign:HintAssist.Hint="Descripcion" materialDesign:HintAssist.IsFloating="True" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="63" FontFamily="Comic Sans MS" FontSize="20"/>
+
             <materialDesign:PackIcon Kind="Money" Margin="488,200,0,0" RenderTransformOrigin="3.156,3.953" Height="39" Width="46" Foreground="{Binding ElementName=txtPrecio, Path=Foreground}" />
             <TextBox x:Name="txtPrecio" PreviewTextInput="txtPrecio_PreviewTextInput" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="546,179,0,0"  materialDesign:HintAssist.Hint="Precio"  TextWrapping="Wrap" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" Width="214" Height="60" FontFamily="Comic Sans MS" FontSize="20"/>
 
@@ -69,9 +69,7 @@
         </Grid>
 
 
-        <Grid Grid.Row="2" Background="DarkBlue" Margin="0,0,0,10">
-            
-        </Grid>
+        <Grid Grid.Row="2" Background="DarkBlue"   />
 
 
 
